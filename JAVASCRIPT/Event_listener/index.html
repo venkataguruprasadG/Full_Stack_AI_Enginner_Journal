@@ -1,0 +1,40 @@
+<!--Problem Statement
+Update your index.html:
+
+xml
+<!DOCTYPE html>
+<html>
+<body>
+    <h1 id="title">JS DOM Master!</h1>
+    <button id="clickMe">Click Me!</button>
+    <p id="counter">Clicks: 0</p>
+</body>
+</html>
+Add JS before </body>:
+
+Find button by ID
+
+Add click listener
+
+Each click: increase counter, update <p> text to "Clicks: X"
+
+Expected: Button works, counter increments!-->
+
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1 id="title">JS DOM Master!</h1>
+    <button id="clickMe">Click Me!</button>
+    <p id="counter">Clicks: 0</p>
+    <script>
+        let count = 0
+        document.getElementById("clickMe").addEventListener("click", function () {
+            let counterElement = document.getElementById("counter");
+            count++;
+            counterElement.innerHTML = "Clicks: " + count;
+        });
+    </script>
+</body>
+
+</html>
