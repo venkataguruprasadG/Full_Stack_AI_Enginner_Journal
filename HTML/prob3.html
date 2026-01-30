@@ -1,0 +1,62 @@
+<!--Practice Problem 3: Links & Images
+Now learn links (<a>) and images (<img>):
+
+Links: <a href="URL">text</a> creates clickable links. Use target="_blank" for new tabs, title for tooltips.
+Images: <img src="path" alt="description" width="300"> embeds images. alt is crucial for accessibility.
+
+Update your fixed intro.html:
+
+Replace #home link with href="https://developer.mozilla.org" (title="MDN Docs")
+
+Add your photo: <img src="your-photo.jpg" alt="Photo of Guru Prasad" width="200"> in <header>
+
+Add hobby image: <img src="https://via.placeholder.com/150?text=Reading" alt="Reading hobby" width="150">
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Guru Prasad - Web Developer</title> <!-- Added title -->
+</head>
+
+<body>
+    <header>
+        <h1>Guru Prasad</h1>
+        <img src="prob3.png" alt="Photo of my gaming project" width="200">
+    </header>
+
+    <nav> <!-- Moved nav early -->
+        <ul>
+            <li><a href="https://developer.mozilla.org" title="MDN Docs">Mozilla Developer Docs</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <article>
+            <p>Hello, my name is Guru Prasad. Learning Web Development.</p>
+            <!-- Added hobbies list here per instructions -->
+            <h2>My Hobbies</h2>
+            <ol>
+                <li>Reading</li>
+                <li>Learning new things</li>
+                <li>Playing games
+                    <img src="prob3_pic.png" alt="hobby image" width="150">
+                </li>
+            </ol>
+        </article>
+
+        <aside> <!-- Semantic wrapper for external links -->
+            <a href="https://www.google.com" target="_blank">Visit Google</a>
+        </aside>
+    </main>
+
+    <footer> <!-- Now properly inside body -->
+        <p>Location: Hyderabad, Telangana, India</p>
+    </footer>
+</body>
+
+</html>
