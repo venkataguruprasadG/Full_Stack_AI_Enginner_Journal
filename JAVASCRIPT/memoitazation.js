@@ -1,4 +1,4 @@
-/* roblem Statement
+/* Problem Statement
 Create fibonacci(n) recursive function (normal slow version)
 
 Memoize it
@@ -10,27 +10,23 @@ Notice 2nd call is instant!*/
 function fibonacci(n) {
     if (n <= 1) {
         return n;
-    }
-    else {
-        return fibonacci(m - 1) + fibonacci(n - 2);
+    } else {
+        return fibonacci(n - 1) + fibonacci(n - 2);
     }
 }
 
-function memomize(fn) {
-    let cache = {};
+function memoize(func) {
+    const cache = {};
     return function (n) {
-        if (n in cache) {
+        if (cache[n] !== undefined) {
             return cache[n];
         }
-        else {
-            let result = fn(n);
-            cache[n] = result;
-            return result;
-        }
-    }
+        cache[n] = func(n);
+        return cache[n];
+    };
 }
 
-let fib = memomize(fibonacci);
+let fib = memoize(fibonacci);
 
 console.log(fib(10));
 
