@@ -1,0 +1,60 @@
+<!--
+Problem Statement
+Build "Hyderabad Quiz" page:
+
+<header>: <h1>City Quiz</h1> + <nav> ("Home", "Quiz")
+
+<form> in <section>:
+
+<label for="famous">Famous for?</label><br>
+
+<select id="famous" name="famous">
+
+<option>IT Hub</option>
+
+<option>Biryani</option>
+
+<option>Charminar</option>
+
+<br><button>Submit Answer</button>
+
+<p> intro with <strong>Question 1</strong>, <footer>
+
+Expected output: Form with clickable dropdown for city facts.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML LEARNING SELECT - OPTION TAG</title>
+</head>
+
+<body>
+    <header>
+        <h1>City Quiz</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <p><strong>Question 1: What is Hyderabad famous for?</strong></p>
+        <form>
+            <label for="famous">Famous for?</label><br>
+            <select id="famous" name="famous">
+                <option value="it_hub">IT Hub</option>
+                <option value="biryani">Biryani</option>
+                <option value="charminar">Charminar</option>
+            </select>
+        </form>
+        <br><button type="submit">Submit Answer</button>
+    </section>
+</body>
+
+</html>
