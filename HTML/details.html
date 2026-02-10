@@ -1,0 +1,56 @@
+<!--
+Problem Statement
+Create FAQ page:
+
+<header>: <h1>HTML FAQ</h1>
+
+<section> with 2 <details>:
+
+Summary: "What is HTML?" → <p>Structure for web.<strong>Tags</strong> matter!</p>
+
+Summary: "Self-closing tags?" → <p><code>&lt;br&gt;</code>, <code>&lt;img&gt;</code>
+
+Add <nav> ("Home", "FAQ"), <footer>, one <a> in first answer to "#tags"
+
+Expected output: Interactive FAQ—click summaries to expand answers.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML LEARNING - DETAILS TAG</title>
+</head>
+
+<body>
+    <header>
+        <h1>HTML FAQ</h1>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="faq.html">FAQ</a>
+        </nav>
+    </header>
+
+    <section>
+        <details>
+            <summary>What is HTML?</summary>
+            <p>
+                Structure for web. <strong>Tags</strong> matter!
+                Learn more about <a href="#tags">tags</a>.
+            </p>
+        </details>
+
+        <details>
+            <summary>Self-closing tags?</summary>
+            <p><code>&lt;br&gt;</code>, <code>&lt;img&gt;</code></p>
+        </details>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 HTML Learning</p>
+    </footer>
+</body>
+
+</html>
