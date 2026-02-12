@@ -1,0 +1,36 @@
+<!--
+Problem Statement
+Create a fixed navigation bar <nav class="navbar">Menu</nav> that stays at the top of the 
+viewport with position: fixed, black background, white text, 50px height,
+full width, and z-index: 999. Expected: Always-visible top bar during scroll.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POSITIONING CSS</title>
+</head>
+<style>
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 50px;
+        background-color: black;
+        color: white;
+        width: 100%;
+        z-index: 999;
+        display: flex;
+    }
+</style>
+
+<body>
+    <nav class="navbar">
+        Menu
+    </nav>
+</body>
+
+</html>
