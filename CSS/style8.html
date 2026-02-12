@@ -1,0 +1,37 @@
+<!--
+Problem Statement
+Style <div class="gallery"><img class="photo" src="img1.jpg"><img class="photo" src="img2.jpg">
+<img class="photo" src="img3.jpg"></div> with display: flex on .gallery, justify-content: center,
+align-items: center,
+and flex-wrap: wrap. Add 10px margin to .photo. Expected: Centered, responsive image gallery.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .gallery {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .photo {
+        margin: 10px;
+    }
+</style>
+
+<body>
+    <div class="gallery">
+        <img class="photo" src="img1.jpg">
+        <img class="photo" src="img2.jpg">
+        <img class="photo" src="img3.jpg">
+    </div>
+</body>
+
+</html>
