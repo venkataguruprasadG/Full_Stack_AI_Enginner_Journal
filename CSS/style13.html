@@ -1,0 +1,33 @@
+<!--
+Problem Statement
+Given <section><h3>Header</h3><p>Direct para</p><div><p>Nested</p></div>
+<p>Later para</p></section>, write CSS using >
+combinator to style ONLY direct <p> children of <section> (not nested ones) with 
+background: yellow. Expected: Only "Direct para" gets yellow background.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinations</title>
+</head>
+<style>
+    section>p {
+        background: yellow;
+    }
+</style>
+
+<body>
+    <section>
+        <h3>
+            Header
+        </h3>
+        <p>
+            Direct para
+        </p>
+    </section>
+</body>
+
+</html>
