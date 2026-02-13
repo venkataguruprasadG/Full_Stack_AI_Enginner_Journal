@@ -1,0 +1,42 @@
+<!--
+Problem Statement
+Style <a class="link" href="#">Visit</a> to change background to lightblue and
+add text-decoration: none on :hover. Also make every odd <li> in 
+<ul class="list"><li>A</li><li>B</li><li>C</li></ul> have color: blue using :nth-child(odd).
+Expected: Interactive link and alternating blue list items.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Link and List Styling</title>
+</head>
+
+<style>
+    .link:hover {
+        background-color: lightblue;
+        text-decoration: none;
+    }
+
+    .list li {
+        list-style-type: none;
+    }
+
+    .list li:nth-child(odd) {
+        color: blue;
+    }
+</style>
+
+<body>
+    <a class="link" href="#">Visit</a>
+    <ul class="list">
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+    </ul>
+
+</body>
+
+</html>
