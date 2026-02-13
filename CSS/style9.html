@@ -1,0 +1,38 @@
+<!--
+Problem Statement
+Create a <div class="dashboard"> with 4 child <div class="widget"> elements using display: grid,
+grid-template-columns: repeat(2, 1fr), grid-template-rows: repeat(2, 150px), and gap: 20px.
+Style widgets with lightblue background, 20px padding. Expected: 2x2 dashboard grid.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID CSS</title>
+</head>
+<style>
+    .dashboard {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 150px);
+        gap: 20px;
+    }
+
+    .widget {
+        background-color: lightblue;
+        padding: 20px;
+    }
+</style>
+
+<body>
+    <div class="dashboard">
+        <div class="widget">Widget 1</div>
+        <div class="widget">Widget 2</div>
+        <div class="widget">Widget 3</div>
+        <div class="widget">Widget 4</div>
+    </div>
+</body>
+
+</html>
