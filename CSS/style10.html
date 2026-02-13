@@ -1,0 +1,41 @@
+<!--
+Problem Statement
+Make <nav class="navbar"><a>Home</a><a>About</a><a>Contact</a></nav> with display: flex and 
+justify-content: space-between normally, but stack vertically (flex-direction: column) on screens
+under 600px wide.
+Add 10px padding to links. Expected: Horizontal nav on desktop, stacked on mobile
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEDIA QUERIES</title>
+</head>
+<style>
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    @media (max-width: 600px) {
+        .navbar {
+            flex-direction: column;
+        }
+
+        .navbar a {
+            padding: 10px;
+        }
+    }
+</style>
+
+<body>
+    <nav class="navbar">
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</body>
+
+</html>
