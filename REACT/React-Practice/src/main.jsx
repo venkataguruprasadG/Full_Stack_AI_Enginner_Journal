@@ -1,10 +1,11 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
+
+// This is the important part: pointing to your new folder
+import Project1 from './react-practice-problems/project1/project1.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
+    <Project1 />
   </StrictMode>,
 )

@@ -1,0 +1,21 @@
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.title {
+    color: blue;
+}
+
+.description {
+    font-size: 20px;
+    color: gray;
+}
+
+.btn {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
