@@ -1,0 +1,17 @@
+.container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.secret-text {
+    font-size: 18px;
+    color: darkblue;
+    font-weight: bold;
+}
