@@ -2,10 +2,10 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 
 // This is the important part: pointing to your new folder
-import Project1 from './react-practice-problems/project1/project1.jsx'
+import Project2 from './react-practice-problems/project2/project2.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Project1 />
+    <Project2 />
   </StrictMode>,
 )
