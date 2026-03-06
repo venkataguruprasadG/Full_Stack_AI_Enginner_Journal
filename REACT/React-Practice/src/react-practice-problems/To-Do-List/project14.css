@@ -1,0 +1,117 @@
+/* General Layout */
+body {
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Main Container */
+.task-list {
+    background: #ffffffee;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.task-list:hover {
+    transform: translateY(-5px);
+}
+
+/* Header */
+h1 {
+    color: #2d3436;
+    margin-bottom: 1.5rem;
+    font-size: 1.9rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+/* Input Area */
+.input-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #dfe6e9;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    font-size: 0.95rem;
+}
+
+input[type="text"]:focus {
+    border-color: #2575fc;
+    box-shadow: 0 0 6px rgba(37, 117, 252, 0.4);
+}
+
+.input-container button {
+    padding: 10px 18px;
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: transform 0.2s, opacity 0.3s;
+}
+
+.input-container button:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* Task List Items */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.task-item {
+    background: #f9f9f9;
+    margin-bottom: 12px;
+    padding: 12px 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 5px solid #2575fc;
+    transition: transform 0.2s, background 0.3s;
+}
+
+.task-item:hover {
+    transform: translateX(5px);
+    background: #f1f1f1;
+}
+
+.task-item button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 600;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.task-item button:hover {
+    background-color: #d63031;
+    transform: scale(1.05);
+}
